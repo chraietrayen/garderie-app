@@ -1,0 +1,11 @@
+const express = require("express");
+const { garderie, services, activites } = require("./data");
+const app = express();
+const port = process.env.PORT || 4000;
+app.use(express.json());
+app.use((request, response, next) => { response.setHeader("Access-Control-Allow-Origin", "*"); next(); });
+app.get("/api/garderie", (_request, response) => response.json(garderie));
+app.get("/api/services", (_request, response) => response.json(services));
+app.get("/api/activites", (_request, response) => response.json(activites));
+app.use((_request, response) => response.status(404).json({ error: "Route introuvable" }));
+app.listen(port, () => console.log(`API garderie disponible sur http://localhost:${port}`));

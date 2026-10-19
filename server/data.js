@@ -1,0 +1,4 @@
+const garderie = { nom:"Les Petits Explorateurs", slogan:"Grandir, jouer et apprendre ensemble.", description:"Un environnement chaleureux et stimulant où chaque enfant avance à son rythme.", image:"https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1200&q=80", adresse:"12 rue des Lilas, 75000 Paris", telephone:"+33 1 23 45 67 89" };
+const services = [{id:1,nom:"Accueil bienveillant",icone:"🤝",description:"Une équipe attentive accueille chaque enfant et accompagne ses premiers pas."},{id:2,nom:"Repas équilibrés",icone:"🍎",description:"Des menus variés, sains et adaptés aux besoins des tout-petits."},{id:3,nom:"Éveil et motricité",icone:"🎨",description:"Des ateliers créatifs et moteurs pour apprendre en s'amusant."}];
+const activites = [{id:1,nom:"Peinture et création"},{id:2,nom:"Éveil musical"},{id:3,nom:"Jardinage"}];
+module.exports = { garderie, services, activites };

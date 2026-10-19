@@ -1,0 +1,3 @@
+export default function Hero({ garderie }) {
+  return <section id="accueil" className="hero py-5"><div className="container py-lg-5"><div className="row align-items-center g-5"><div className="col-lg-6"><span className="badge rounded-pill text-bg-warning mb-3">Garderie éducative</span><h1 className="display-4 fw-bold mb-3">{garderie.slogan}</h1><p className="lead mb-4">{garderie.description}</p><a className="btn btn-primary btn-lg px-4" href="#contact">Visiter la garderie</a></div><div className="col-lg-6"><img className="hero-image" src={garderie.image} alt="Enfants qui jouent ensemble"/></div></div></div></section>;
+}

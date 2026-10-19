@@ -1,0 +1,19 @@
+{
+  "name": "garderie-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"next dev\" \"node server/index.js\"",
+    "dev:frontend": "next dev",
+    "dev:backend": "node server/index.js",
+    "build": "next build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "concurrently": "^9.0.1",
+    "express": "^4.21.1",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
